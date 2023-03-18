@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ScheduleVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleVC" id="Y6W-OH-hqX" customClass="ScheduleVC" customModule="Build_Ezi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4G-d3-30H" userLabel="TitleBar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkq-Uk-Yhn">
+                                        <rect key="frame" x="20" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="QPY-d1-S1N"/>
+                                            <constraint firstAttribute="height" constant="45" id="Vtm-jP-0lz"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_back"/>
+                                        <connections>
+                                            <action selector="btnBack_action:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YAU-rv-mo9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Od-PS-9LP">
+                                        <rect key="frame" x="369" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="NtS-k8-yfi"/>
+                                            <constraint firstAttribute="width" constant="45" id="PcV-3W-Ybi"/>
+                                        </constraints>
+                                        <color key="tintColor" name="AppColor"/>
+                                        <state key="normal" image="calendar" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnCalendar_action:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BGH-pv-G92"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khM-my-7WK">
+                                        <rect key="frame" x="169" y="11.5" width="76" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                        <color key="textColor" red="0.1780564785" green="0.27453878520000002" blue="0.36249634619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nkq-Uk-Yhn" firstAttribute="centerY" secondItem="R4G-d3-30H" secondAttribute="centerY" id="F05-e8-0rZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Od-PS-9LP" secondAttribute="trailing" id="Hhb-f3-i7q"/>
+                                    <constraint firstItem="khM-my-7WK" firstAttribute="centerX" secondItem="R4G-d3-30H" secondAttribute="centerX" id="WUk-g9-kzC"/>
+                                    <constraint firstAttribute="height" constant="45" id="h46-fv-ruL"/>
+                                    <constraint firstItem="nkq-Uk-Yhn" firstAttribute="leading" secondItem="R4G-d3-30H" secondAttribute="leading" constant="20" id="j9d-wb-ygr"/>
+                                    <constraint firstItem="2Od-PS-9LP" firstAttribute="centerY" secondItem="R4G-d3-30H" secondAttribute="centerY" id="kWh-3y-KQb"/>
+                                    <constraint firstItem="khM-my-7WK" firstAttribute="centerY" secondItem="R4G-d3-30H" secondAttribute="centerY" id="lCp-i8-h9Q"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-Tp-ir9" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="89" width="414" height="300"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="5yK-WW-YtV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" name="AppBrightGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" name="AppGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" name="AppOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                                        <color key="value" name="AppOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useVeryShortWeekdaySymbols" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No task(s) added yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgw-7l-0GW">
+                                <rect key="frame" x="119" y="659.5" width="176" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9ny-Xz-YlF">
+                                <rect key="frame" x="0.0" y="389" width="414" height="473"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="Dfv-wv-9Ks"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="ckA-aS-DEz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="AppViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qgw-7l-0GW" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4CV-hI-hs2"/>
+                            <constraint firstAttribute="trailing" secondItem="9ny-Xz-YlF" secondAttribute="trailing" id="8TH-kz-vHo"/>
+                            <constraint firstItem="9ny-Xz-YlF" firstAttribute="top" secondItem="CIl-Tp-ir9" secondAttribute="bottom" id="BVG-A2-LaO"/>
+                            <constraint firstItem="R4G-d3-30H" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="JXH-3u-n3z"/>
+                            <constraint firstItem="CIl-Tp-ir9" firstAttribute="top" secondItem="R4G-d3-30H" secondAttribute="bottom" id="Obw-yC-SlM"/>
+                            <constraint firstItem="9ny-Xz-YlF" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="PM3-fa-KHQ"/>
+                            <constraint firstItem="9ny-Xz-YlF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bLj-sE-tdM"/>
+                            <constraint firstItem="CIl-Tp-ir9" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="emf-0d-ziQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Qgw-7l-0GW" secondAttribute="bottom" constant="180" id="hum-20-nLh"/>
+                            <constraint firstItem="R4G-d3-30H" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mnb-ru-nhy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="R4G-d3-30H" secondAttribute="trailing" id="spb-eh-Y0C"/>
+                            <constraint firstItem="CIl-Tp-ir9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vad-6q-Lx2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="CIl-Tp-ir9" id="Ofl-ja-ykr"/>
+                        <outlet property="noEventsLabel" destination="Qgw-7l-0GW" id="dHi-AN-vUi"/>
+                        <outlet property="tableView" destination="9ny-Xz-YlF" id="Uyn-fH-Eiv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="75"/>
+        </scene>
+        <!--Schedule TimelineVC-->
+        <scene sceneID="N7D-1R-NVg">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleTimelineVC" id="IIC-vG-G9s" customClass="ScheduleTimelineVC" customModule="Build_Ezi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y0o-A4-hPp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzE-5K-cby" userLabel="TitleBar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAT-aJ-Jvz">
+                                        <rect key="frame" x="20" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="qZ5-x9-pMU"/>
+                                            <constraint firstAttribute="height" constant="45" id="uEs-pX-QW6"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_back"/>
+                                        <connections>
+                                            <action selector="btnBack_action:" destination="IIC-vG-G9s" eventType="touchUpInside" id="6iH-4M-ZbK"/>
+                                            <action selector="btnBack_action:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EVs-EV-aRA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHC-sh-ALj">
+                                        <rect key="frame" x="169" y="11.5" width="76" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                        <color key="textColor" red="0.1780564785" green="0.27453878520000002" blue="0.36249634619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og0-ns-ZFl">
+                                        <rect key="frame" x="369" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="1f4-6j-GeE"/>
+                                            <constraint firstAttribute="height" constant="45" id="fGk-oX-1p3"/>
+                                        </constraints>
+                                        <state key="normal" image="Icon material-home"/>
+                                        <connections>
+                                            <action selector="btnHome_action:" destination="IIC-vG-G9s" eventType="touchUpInside" id="8p9-IV-tgv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Og0-ns-ZFl" secondAttribute="trailing" id="2vm-se-qnH"/>
+                                    <constraint firstItem="eAT-aJ-Jvz" firstAttribute="leading" secondItem="AzE-5K-cby" secondAttribute="leading" constant="20" id="KJn-p4-9dC"/>
+                                    <constraint firstItem="NHC-sh-ALj" firstAttribute="centerY" secondItem="AzE-5K-cby" secondAttribute="centerY" id="MhT-kn-4aj"/>
+                                    <constraint firstAttribute="height" constant="45" id="NsH-gF-rfz"/>
+                                    <constraint firstItem="Og0-ns-ZFl" firstAttribute="centerY" secondItem="AzE-5K-cby" secondAttribute="centerY" id="OSN-yH-QU6"/>
+                                    <constraint firstItem="NHC-sh-ALj" firstAttribute="centerX" secondItem="AzE-5K-cby" secondAttribute="centerX" id="V1B-5y-fCQ"/>
+                                    <constraint firstItem="eAT-aJ-Jvz" firstAttribute="centerY" secondItem="AzE-5K-cby" secondAttribute="centerY" id="pLK-xz-rfu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-WR-fxY" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" name="AppBrightGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" name="AppOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                                        <color key="value" name="AppOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gkm-90-HfR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AzE-5K-cby" firstAttribute="leading" secondItem="Gkm-90-HfR" secondAttribute="leading" id="715-Xq-oSP"/>
+                            <constraint firstItem="Gkm-90-HfR" firstAttribute="bottom" secondItem="CYE-WR-fxY" secondAttribute="bottom" id="A1O-aK-lwI"/>
+                            <constraint firstItem="CYE-WR-fxY" firstAttribute="top" secondItem="AzE-5K-cby" secondAttribute="bottom" id="GYr-jq-X8e"/>
+                            <constraint firstItem="AzE-5K-cby" firstAttribute="top" secondItem="Gkm-90-HfR" secondAttribute="top" id="J7U-QT-Zcl"/>
+                            <constraint firstItem="CYE-WR-fxY" firstAttribute="trailing" secondItem="Gkm-90-HfR" secondAttribute="trailing" id="J8c-rw-6df"/>
+                            <constraint firstItem="CYE-WR-fxY" firstAttribute="leading" secondItem="Gkm-90-HfR" secondAttribute="leading" id="XQI-ht-0LV"/>
+                            <constraint firstItem="AzE-5K-cby" firstAttribute="trailing" secondItem="Gkm-90-HfR" secondAttribute="trailing" id="zYM-lZ-0Zj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="CYE-WR-fxY" id="Yi5-Xt-pHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cU9-Jp-mhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon material-home" width="19" height="16.149999618530273"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="ic_back" width="20.5" height="13.5"/>
+        <namedColor name="AppBrightGreenColor">
+            <color red="0.27799999713897705" green="0.91900002956390381" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppColor">
+            <color red="0.17800000309944153" green="0.27399998903274536" blue="0.3580000102519989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppGreenColor">
+            <color red="0.12600000202655792" green="0.81499999761581421" blue="0.70200002193450928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppOrangeColor">
+            <color red="1" green="0.57599997520446777" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppViewBackgroundColor">
+            <color red="0.97299998998641968" green="0.97600001096725464" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

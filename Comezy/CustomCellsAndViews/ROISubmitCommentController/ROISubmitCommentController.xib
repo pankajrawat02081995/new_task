@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ROISubmitCommentController" customModule="Build_Ezi" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="7ol-rN-rDZ" id="vSI-M4-Ip9"/>
+                <outlet property="commentTextField" destination="zhu-VH-cq2" id="hft-4L-24z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BD3-1u-gud">
+                    <rect key="frame" x="57" y="338" width="300" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Response" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ol-rN-rDZ">
+                            <rect key="frame" x="88.5" y="15" width="123.5" height="24"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                            <color key="textColor" name="AppColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAG-lo-sWx">
+                            <rect key="frame" x="160" y="151" width="120" height="44"/>
+                            <color key="backgroundColor" name="AppColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="Fvd-rQ-A7R"/>
+                                <constraint firstAttribute="height" constant="44" id="ffa-cA-o8V"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="mCornerRadius">
+                                    <real key="value" value="14"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="mBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="mBorderColor">
+                                    <color key="value" name="AppColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="postButton:" destination="-1" eventType="touchUpInside" id="3cp-yh-wxz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59r-EE-Kmt">
+                            <rect key="frame" x="20" y="151" width="120" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="Njd-cl-uBM"/>
+                                <constraint firstAttribute="height" constant="44" id="dDe-qa-cTC"/>
+                            </constraints>
+                            <color key="tintColor" name="AppColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="No"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="mCornerRadius">
+                                    <real key="value" value="14"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="mBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="mBorderColor">
+                                    <color key="value" name="AppColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="FGg-FK-JXi"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhu-VH-cq2">
+                            <rect key="frame" x="20" y="47" width="260" height="90"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="90" id="EFh-Lf-QDh"/>
+                                <constraint firstAttribute="width" constant="260" id="czM-oD-riQ"/>
+                            </constraints>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="mCornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="mBorderColor">
+                                    <color key="value" systemColor="systemGray4Color"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="mBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="zhu-VH-cq2" firstAttribute="leading" secondItem="59r-EE-Kmt" secondAttribute="leading" id="HXE-Kv-YT1"/>
+                        <constraint firstItem="59r-EE-Kmt" firstAttribute="top" secondItem="zhu-VH-cq2" secondAttribute="bottom" constant="14" id="Kvv-nP-MQS"/>
+                        <constraint firstItem="zhu-VH-cq2" firstAttribute="centerX" secondItem="BD3-1u-gud" secondAttribute="centerX" id="PZT-cr-Kvo"/>
+                        <constraint firstItem="zhu-VH-cq2" firstAttribute="trailing" secondItem="CAG-lo-sWx" secondAttribute="trailing" id="QLV-aE-2wx"/>
+                        <constraint firstAttribute="height" constant="220" id="awQ-VY-LSC"/>
+                        <constraint firstItem="CAG-lo-sWx" firstAttribute="top" secondItem="zhu-VH-cq2" secondAttribute="bottom" constant="14" id="cfs-OE-LWG"/>
+                        <constraint firstItem="7ol-rN-rDZ" firstAttribute="centerX" secondItem="BD3-1u-gud" secondAttribute="centerX" id="duU-8w-dkK"/>
+                        <constraint firstItem="7ol-rN-rDZ" firstAttribute="top" secondItem="BD3-1u-gud" secondAttribute="top" constant="15" id="n00-Yd-uR2"/>
+                        <constraint firstAttribute="width" constant="300" id="oMN-2f-jjb"/>
+                        <constraint firstItem="zhu-VH-cq2" firstAttribute="top" secondItem="7ol-rN-rDZ" secondAttribute="bottom" constant="8" symbolic="YES" id="zFe-Hh-w0Y"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mCornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="mBorderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="TranslucentBackground"/>
+            <constraints>
+                <constraint firstItem="BD3-1u-gud" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Ln-mh-3LG"/>
+                <constraint firstItem="BD3-1u-gud" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Er8-Ky-UJ9"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="116"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppColor">
+            <color red="0.17800000309944153" green="0.27399998903274536" blue="0.3580000102519989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TranslucentBackground">
+            <color red="0.30500000715255737" green="0.30500000715255737" blue="0.30500000715255737" alpha="0.44600000977516174" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

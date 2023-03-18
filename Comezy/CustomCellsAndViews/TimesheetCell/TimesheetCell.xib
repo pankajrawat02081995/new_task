@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimesheetCell" rowHeight="73" id="KGk-i7-Jjw" customClass="TimesheetCell" customModule="Build_Ezi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xae-cw-K6p">
+                        <rect key="frame" x="10" y="0.0" width="327" height="73"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="beh-wC-dmR">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Aug" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS1-Fs-xTV">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="73"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" red="0.69411764705882351" green="0.74509803921568629" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00Am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oH8-kb-bZq">
+                                        <rect key="frame" x="65.5" y="0.0" width="58" height="73"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" red="0.69411764710000001" green="0.74509803919999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00Am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjS-6Z-0rN">
+                                        <rect key="frame" x="139" y="0.0" width="58" height="73"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" red="0.69411764710000001" green="0.74509803919999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lbl Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bea-Cm-W2r">
+                                        <rect key="frame" x="212" y="0.0" width="58.5" height="73"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" red="0.69411764710000001" green="0.74509803919999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dHC-2i-ogO">
+                                        <rect key="frame" x="302" y="0.0" width="25" height="73"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Hkb-l4-UvJ">
+                                                <rect key="frame" x="0.0" y="2.5" width="25" height="68.5"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="oRZ-aG-yMW"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="beh-wC-dmR" firstAttribute="leading" secondItem="Xae-cw-K6p" secondAttribute="leading" id="0Dm-GF-i5C"/>
+                            <constraint firstItem="beh-wC-dmR" firstAttribute="top" secondItem="Xae-cw-K6p" secondAttribute="top" id="gVX-wU-Trj"/>
+                            <constraint firstAttribute="bottom" secondItem="beh-wC-dmR" secondAttribute="bottom" id="sd8-bV-5Cx"/>
+                            <constraint firstAttribute="trailing" secondItem="beh-wC-dmR" secondAttribute="trailing" id="v5c-jc-gXg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Xae-cw-K6p" secondAttribute="bottom" id="7gZ-Mf-fll"/>
+                    <constraint firstItem="Xae-cw-K6p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="D8J-du-eWk"/>
+                    <constraint firstItem="Xae-cw-K6p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MtG-5X-QRo"/>
+                    <constraint firstAttribute="trailing" secondItem="Xae-cw-K6p" secondAttribute="trailing" id="dTH-fp-e0j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnEdit" destination="Hkb-l4-UvJ" id="ghW-Nv-Lsy"/>
+                <outlet property="editButtonHeight" destination="oRZ-aG-yMW" id="A2j-1r-IU6"/>
+                <outlet property="lblDate" destination="bS1-Fs-xTV" id="Oom-3o-62x"/>
+                <outlet property="lblHour" destination="Bea-Cm-W2r" id="C6U-EU-You"/>
+                <outlet property="lblOut" destination="PjS-6Z-0rN" id="QSG-LP-pTl"/>
+                <outlet property="lblStartIn" destination="oH8-kb-bZq" id="YvF-Ix-ZNQ"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="103.45982142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

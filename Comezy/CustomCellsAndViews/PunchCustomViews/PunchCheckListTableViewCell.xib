@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PunchCheckListCell" rowHeight="46" id="KGk-i7-Jjw" customClass="PunchCheckListTableViewCell" customModule="Build_Ezi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Hello this is new information coming straight from me" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3x-8F-2Hh">
+                        <rect key="frame" x="15" y="12" width="167" height="22"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAh-3L-rg0">
+                        <rect key="frame" x="202" y="7.5" width="113" height="31"/>
+                        <color key="tintColor" name="AppLabelGray"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="UnCompleted"/>
+                        <connections>
+                            <action selector="btnUnComplete_action:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Rz6-f0-IwH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="D3x-8F-2Hh" secondAttribute="bottom" constant="12" id="2JH-P9-5ch"/>
+                    <constraint firstItem="OAh-3L-rg0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dep-ne-IT6"/>
+                    <constraint firstItem="OAh-3L-rg0" firstAttribute="leading" secondItem="D3x-8F-2Hh" secondAttribute="trailing" constant="20" id="DzR-sD-yI3"/>
+                    <constraint firstItem="D3x-8F-2Hh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ZKH-wP-W2l"/>
+                    <constraint firstItem="D3x-8F-2Hh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="uCX-Y5-m2g"/>
+                    <constraint firstAttribute="trailing" secondItem="OAh-3L-rg0" secondAttribute="trailing" constant="5" id="v2c-sw-U2e"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="mCornerRadius">
+                        <real key="value" value="16"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnUnComplete" destination="OAh-3L-rg0" id="BvM-aP-b1F"/>
+                <outlet property="punchLabel" destination="D3x-8F-2Hh" id="cLR-oD-fML"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="99.107142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AppLabelGray">
+            <color red="0.58399999141693115" green="0.66299998760223389" blue="0.69800001382827759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

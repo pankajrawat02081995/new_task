@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="50.4" viewBox="0 0 45 50.4">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.38" y1="1.994" x2="0.269" y2="-0.355" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#34f5c6"/>
+      <stop offset="1" stop-color="#1dcdfe"/>
+    </linearGradient>
+  </defs>
+  <g id="event-schedule" transform="translate(-4.5 -2.25)">
+    <path id="Path_344" data-name="Path 344" d="M29.025,44.55a14.4,14.4,0,1,1,14.4-14.4A14.4,14.4,0,0,1,29.025,44.55Zm0-25.2a10.8,10.8,0,1,0,10.8,10.8A10.8,10.8,0,0,0,29.025,19.35Z" transform="translate(6.075 8.1)" fill="url(#linear-gradient)"/>
+    <path id="Path_345" data-name="Path 345" d="M27.162,32.85,22.5,28.188V20.25h3.6v6.462l3.6,3.6Z" transform="translate(10.8 10.8)" fill="url(#linear-gradient)"/>
+    <path id="Path_346" data-name="Path 346" d="M47.7,9.45a3.6,3.6,0,0,0-3.6-3.6H36.9V2.25H33.3v3.6H18.9V2.25H15.3v3.6H8.1a3.6,3.6,0,0,0-3.6,3.6v36a3.6,3.6,0,0,0,3.6,3.6h7.2v-3.6H8.1v-36h7.2v3.6h3.6V9.45H33.3v3.6h3.6V9.45h7.2v10.8h3.6Z" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
