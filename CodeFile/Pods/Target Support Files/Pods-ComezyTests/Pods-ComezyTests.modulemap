@@ -1,0 +1,6 @@
+framework module Pods_ComezyTests {
+  umbrella header "Pods-ComezyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
