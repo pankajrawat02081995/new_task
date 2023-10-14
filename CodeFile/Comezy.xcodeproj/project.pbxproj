@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -134,6 +134,7 @@
 		21FD5A032739D9DE00FE33DC /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21FD59F02739D9DE00FE33DC /* Poppins-Italic.ttf */; };
 		21FD5A50273B19AF00FE33DC /* SignaturePadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD5A4F273B19AF00FE33DC /* SignaturePadVC.swift */; };
 		27F2E07746748348356975B7 /* Pods_Comezy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C64572733E8A96FD8AA77A /* Pods_Comezy.framework */; };
+		32256CC62AD9C5A600101EEF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32256CC52AD9C5A600101EEF /* Date.swift */; };
 		410F8F4B2AC57EF300798F59 /* ProfileLostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F8F4A2AC57EF300798F59 /* ProfileLostListModel.swift */; };
 		410F8F4D2AC58F1C00798F59 /* PurchaseOrdersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F8F4C2AC58F1C00798F59 /* PurchaseOrdersListModel.swift */; };
 		410F8F4F2AC5A18500798F59 /* PLFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F8F4E2AC5A18500798F59 /* PLFilterVC.swift */; };
@@ -624,6 +625,7 @@
 		21FD59EF2739D9DE00FE33DC /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		21FD59F02739D9DE00FE33DC /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		21FD5A4F273B19AF00FE33DC /* SignaturePadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturePadVC.swift; sourceTree = "<group>"; };
+		32256CC52AD9C5A600101EEF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		410F8F4A2AC57EF300798F59 /* ProfileLostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLostListModel.swift; sourceTree = "<group>"; };
 		410F8F4C2AC58F1C00798F59 /* PurchaseOrdersListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOrdersListModel.swift; sourceTree = "<group>"; };
 		410F8F4E2AC5A18500798F59 /* PLFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLFilterVC.swift; sourceTree = "<group>"; };
@@ -1680,6 +1682,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		32256CC42AD9C59D00101EEF /* DateClass */ = {
+			isa = PBXGroup;
+			children = (
+				32256CC52AD9C5A600101EEF /* Date.swift */,
+			);
+			path = DateClass;
+			sourceTree = "<group>";
+		};
 		4192F00F2A921D82006E17C1 /* DailyInviceListCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1845,6 +1855,7 @@
 		8FC94B8928255AAA0034406E /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				32256CC42AD9C59D00101EEF /* DateClass */,
 				8F64A3E4285BCB64000AA50B /* PunchCustomClasses */,
 				8F0E0ACD284E21050036130E /* VariationDocsCollectionView */,
 				8F40DC5528479D19008E0C41 /* VariationCommentTableView */,
@@ -2471,6 +2482,7 @@
 				8F94F7D7287C394800D45CA5 /* AlamoFireExtension.swift in Sources */,
 				8F069B9B286089E8008713A1 /* AddPunchCheckTableViewCell.swift in Sources */,
 				8F4FDDA5286CC3A600E1257F /* EditWorkHealthSafetyPlanVC.swift in Sources */,
+				32256CC62AD9C5A600101EEF /* Date.swift in Sources */,
 				8FC2EC412893FC3700E3EBA3 /* InductionQuestionCell.swift in Sources */,
 				8F4FDDB3286CFB4500E1257F /* IncidentReportListCell.swift in Sources */,
 				CF52A1EB2757A8F2001173EF /* RetrieveProjectViewModel.swift in Sources */,

@@ -322,9 +322,9 @@ class HomeVC: UIViewController{
         //        }
         
         if self.IS_SUBSCRIPTION == AppConstant.NO_ACTIVE_PLAN {
-            let vc = ScreenManager.getController(storyboard: .projectStatus, controller: SubscribeVC()) as! SubscribeVC
-            vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION
-            self.navigationController?.pushViewController(vc, animated: true)
+//            let vc = ScreenManager.getController(storyboard: .projectStatus, controller: SubscribeVC()) as! SubscribeVC
+//            vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION
+//            self.navigationController?.pushViewController(vc, animated: true)
         } else {
             let vc = ScreenManager.getController(storyboard: .main, controller: AddProjectVC()) as! AddProjectVC
             self.navigationController?.pushViewController(vc, animated: true)
@@ -334,7 +334,7 @@ class HomeVC: UIViewController{
     // MARK: - Action Methods
     @IBAction func btnSubscribeAction(_ sender: UIButton) {
         let vc = ScreenManager.getController(storyboard: .projectStatus, controller: SubscribeVC()) as! SubscribeVC
-        vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION ?? ""
+//        vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION ?? ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

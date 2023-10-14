@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import FSCalendar
-import KVKCalendar
+//import KVKCalendar
 
 class ScheduleTimelineVC: UIViewController {
     var scheduleVM = ScheduleViewModel()
@@ -169,8 +169,8 @@ extension ScheduleTimelineVC: FSCalendarDataSource, FSCalendarDelegate {
             customDateLabel.font = UIFont.boldSystemFont(ofSize: 18)
         }
         
-        print("Todays Month         ->", self.calendar.today?.kvkMonth)
-        print("Delegate Month ->", date.kvkMonth)
+//        print("Todays Month         ->", self.calendar.today?.kvkMonth)
+//        print("Delegate Month ->", date.kvkMonth)
         for subview in cell.subviews {
             
             if subview.className == "TimelineLabel" || subview.className == "CustomDateLabel"{

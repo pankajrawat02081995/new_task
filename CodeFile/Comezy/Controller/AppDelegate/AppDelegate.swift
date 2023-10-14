@@ -14,7 +14,7 @@ import GoogleMaps
 import FirebaseCore
 import FirebaseDynamicLinks
 import FirebaseMessaging
-import StripePaymentsUI
+//import StripePaymentsUI
 
 
 @main

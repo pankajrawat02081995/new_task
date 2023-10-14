@@ -14,14 +14,11 @@ class PaymentMethodSelectionVC: UIViewController {
     
     @IBOutlet weak var imgPaypalCheck: UIImageView!
     
-    
     var selectedMethod = "0"
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
     
     @IBAction func btnCancelClicked(_ sender: UIButton) {
@@ -41,7 +38,7 @@ class PaymentMethodSelectionVC: UIViewController {
     }
     
     @IBAction func btnPaynowClicked(_ sender: UIButton) {
-        checkSubscribe?.subscribe(type: self.selectedMethod)
+//        checkSubscribe?.subscribe(type: self.selectedMethod)
         self.dismiss(animated: true)
     }
     
