@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C79A0832-6077-4852-988E-689A449881A5"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BD18CEB-1B1F-4F8B-BC57-54EF8CE77AA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Comezy/Controller/Home/VariationsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC834A93-AD80-41BA-84DC-7E20C270F3CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Comezy/Controller/Home/VariationsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F33367E5-7E68-4A2A-82A1-1372AE269B69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Comezy/Controller/Home/IncidentReportDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "manageUI(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F33367E5-7E68-4A2A-82A1-1372AE269B69 - b39da327ce6240fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Build_Ezi.IncidentReportDetailVC.initialLoad() -&gt; ()"
+                  moduleName = "Build Ezi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajrawat/Documents/IOS/CodeFile/Comezy/Controller/Home/IncidentReportDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "F33367E5-7E68-4A2A-82A1-1372AE269B69 - 41580c7de6338b67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Build_Ezi.IncidentReportDetailVC.manageUI(id: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
+                  moduleName = "Build Ezi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajrawat/Documents/IOS/CodeFile/Comezy/Controller/Home/IncidentReportDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "578B549E-08B2-4423-A3E1-547F26C8F94B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Comezy/Controller/Home/IncidentReportDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "manageUI(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "578B549E-08B2-4423-A3E1-547F26C8F94B - b39da327ce624f47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Build_Ezi.IncidentReportDetailVC.initialLoad() -&gt; ()"
+                  moduleName = "Build Ezi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajrawat/Documents/IOS/CodeFile/Comezy/Controller/Home/IncidentReportDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "578B549E-08B2-4423-A3E1-547F26C8F94B - 536722706e031da5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Array&lt;Build_Ezi.CommentResult&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in Build_Ezi.IncidentReportDetailVC.initialLoad() -&gt; ()"
+                  moduleName = "Build Ezi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajrawat/Documents/IOS/CodeFile/Comezy/Controller/Home/IncidentReportDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "578B549E-08B2-4423-A3E1-547F26C8F94B - 41580c7de6338b67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Build_Ezi.IncidentReportDetailVC.manageUI(id: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
+                  moduleName = "Build Ezi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajrawat/Documents/IOS/CodeFile/Comezy/Controller/Home/IncidentReportDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13A2E6C0-FCEE-4E82-9B9F-2C5A1411AD78"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Comezy/Controller/Home/IncidentReportDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0492F8AD-68EE-4C79-A9DB-894FBAE43064"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Comezy/Controller/Home/IncidentReportDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B36FD93-6B9A-4CF1-8BE0-41B404CF7E55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Comezy/Controller/Home/IncidentReportListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

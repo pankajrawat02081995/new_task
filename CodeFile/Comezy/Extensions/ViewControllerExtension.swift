@@ -75,6 +75,15 @@ extension UIViewController {
         vc.callback = okCallback
     }
     
+    func showSubscriptionAppAlert(title: String, message: String,yesTitle:String, okCallback: @escaping (() -> Void)) {
+        let vc = ConfirmViewController()
+        vc.show()
+        vc.confirmHeadingLabel?.text = title
+        vc.confirmDescriptionLabel?.text = message
+        vc.btnYes.setTitle(yesTitle, for: .normal)
+        vc.callback = okCallback
+    }
+    
     func showWarningAppAlert(title: String, message: String, okCallBack: @escaping (() -> Void)) {
         let vc = ConfirmViewController()
         vc.confirmHeadingLabel?.text = title
@@ -92,6 +101,8 @@ extension UIViewController {
         vc.confirmDescriptionLabel?.text = "The work is in progress, kindly visit again later"
         vc.btnNo?.setTitle("Ok", for: .normal)
     }
+    
+    
     
     func showMessageWithOk(title: String, message: String) {
         let vc = ConfirmViewController()

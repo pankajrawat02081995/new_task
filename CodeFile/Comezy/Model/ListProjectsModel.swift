@@ -24,8 +24,9 @@ struct ProjectResult: Codable {
     var createdDate : String?
     var status: String?
     var resultDescription: String?
-
+    var subscription_status : Bool?
+    
     enum CodingKeys: String, CodingKey {
-        case id, name, createdDate = "created_date", status, resultDescription = "description"
+        case id, name, subscription_status,createdDate = "created_date", status, resultDescription = "description"
     }
 }

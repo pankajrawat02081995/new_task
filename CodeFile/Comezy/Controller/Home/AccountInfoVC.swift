@@ -90,16 +90,16 @@ class AccountInfoVC: UIViewController {
     }
     
     @objc func deleteAccount(_ sender: UITapGestureRecognizer) {
-        showAppAlert(title: "Success", message: "Do you want to delete account") {
-           // print("Account Deleted")
+        showAppAlert(title: "Delete Account", message: "Do you want to delete account") {
+            // print("Account Deleted")
             self.objAccountInfoVM.deleteAccount() { success, response, msg in
                 if success {
                     DispatchQueue.main.async {
                         AppDelegate.shared.signOut()
                         self.showToast(message: "Account Deleted Successfully")
-                        }
                     }
                 }
+            }
         }
         
     }

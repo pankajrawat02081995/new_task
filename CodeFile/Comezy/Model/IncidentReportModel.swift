@@ -139,6 +139,7 @@ struct IncidentResult: Codable {
     let timeOfIncidentReported, dateOfIncidentReported, dateOfIncident, timeOfIncident: String?
     let reportCreatedDate, reportUpdatedDate, descriptionOfIncident, preventativeActionTaken: String?
     let files: [String?]
+    let is_owner: Bool?
     let name, personCompletingFormWatch,visitor_witness, visitor_witness_phone, witnessOfIncidentWatch: String?
 
     enum CodingKeys: String, CodingKey {
@@ -155,6 +156,7 @@ struct IncidentResult: Codable {
         case reportCreatedDate = "report_created_date"
         case reportUpdatedDate = "report_updated_date"
         case descriptionOfIncident = "description_of_incident"
+        case is_owner
         case preventativeActionTaken = "preventative_action_taken"
         case files, name
         case personCompletingFormWatch = "person_completing_form_watch"

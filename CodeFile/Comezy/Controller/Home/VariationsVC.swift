@@ -96,6 +96,14 @@ extension VariationsVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlansTableViewCell", for: indexPath) as! PlansTableViewCell
         let item = myVariationList[indexPath.row]
 
+        if item.variation_status?.lowercased() == "accepted"{
+            cell.lblColorStatus.backgroundColor = App.Colors.appGreenColor
+        }else if item.variation_status?.lowercased() == "pending"{
+            cell.lblColorStatus.backgroundColor = App.Colors.appOrangeColor
+        }else{
+            cell.lblColorStatus.backgroundColor = App.Colors.red
+        }
+        
         cell.lblPlanHeading.text = item.name
         
         cell.lblPlanDescription.text = item.summary
@@ -118,8 +126,6 @@ extension VariationsVC: UITableViewDelegate, UITableViewDataSource {
         vc.variationId = myVariationList[indexPath.row].id
         let item = myVariationList[indexPath.row]
 
-
-    
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -56,7 +56,17 @@ class IncidentReportDetailVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         print(didEdit)
+        
+        if self.objIncidentDetails?.is_owner == true{
+            self.btnDelete.isHidden = false
+            self.editButton.isHidden = false
+        }else{
+            self.btnDelete.isHidden = true
+            self.editButton.isHidden = true
+        }
+        
         if didEdit == true {
             objIncidentListVM.getList(size: "1000", page: 1, project_id: projectId ?? 0) { success, resp, errorMsg in
                 if success {
@@ -83,15 +93,16 @@ class IncidentReportDetailVC: UIViewController {
     //MARK: - Manage UI
     func manageUI(id:Int!){
         loggedInUserOcc = kUserData?.user_type ?? ""
-        if (loggedInUserOcc == UserType.kOwner || loggedInUserId == id ) {
-            btnDelete.isHidden = false
-            editButton.isHidden=false
-        } else {
-            btnDelete.isHidden = true
-            editButton.isHidden=true
-
-        }
+//        if (loggedInUserOcc == UserType.kOwner || loggedInUserId == id ) {
+//            btnDelete.isHidden = false
+//            editButton.isHidden=false
+//        } else {
+//            btnDelete.isHidden = true
+//            editButton.isHidden=true
+//
+//        }
     }
+    
     //MARK: Initial Load
     func initialLoad() {
         print(loggedInUserId)

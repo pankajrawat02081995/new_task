@@ -43,11 +43,11 @@ class IncidentReportListVC: UIViewController {
         
         loggedInUserOcc = kUserData?.user_type ?? ""
         
-        if loggedInUserOcc == UserType.kOwner {
-            addButton.isHidden = false
-        } else {
-            addButton.isHidden = true
-        }
+//        if loggedInUserOcc == UserType.kOwner {
+        self.addButton.isHidden = false
+//        } else {
+//            addButton.isHidden = true
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -9,6 +9,7 @@ import UIKit
 
 class PlansTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblColorStatus: UILabel!
     @IBOutlet weak var lblPlanHeading: UILabel!
     @IBOutlet weak var lblPlanDescription: UILabel!
     @IBOutlet weak var lblDate: UILabel!

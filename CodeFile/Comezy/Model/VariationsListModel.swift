@@ -30,9 +30,11 @@ struct VariationsListResult: Codable {
     let file: [String]
     let price, totalPrice, senderWatch: String
     let project: Int
+    let variation_status : String?
 
     enum CodingKeys: String, CodingKey {
         case id, receiver, sender
+        case variation_status
         case createdDate = "created_date"
         case name, summary, gst, file, price
         case totalPrice = "total_price"

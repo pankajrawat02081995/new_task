@@ -65,7 +65,7 @@ class HomeVC: UIViewController{
         self.btnSubsribeAction.setImage(UIImage(named: "ic_subscribe"), for: .normal)
         setWindowLevel()
         print(searchBar.frame.width, "<=============== search bar width")
-       
+        
         
     }
     
@@ -322,9 +322,9 @@ class HomeVC: UIViewController{
         //        }
         
         if self.IS_SUBSCRIPTION == AppConstant.NO_ACTIVE_PLAN {
-//            let vc = ScreenManager.getController(storyboard: .projectStatus, controller: SubscribeVC()) as! SubscribeVC
-//            vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION
-//            self.navigationController?.pushViewController(vc, animated: true)
+            //            let vc = ScreenManager.getController(storyboard: .projectStatus, controller: SubscribeVC()) as! SubscribeVC
+            //            vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION
+            //            self.navigationController?.pushViewController(vc, animated: true)
         } else {
             let vc = ScreenManager.getController(storyboard: .main, controller: AddProjectVC()) as! AddProjectVC
             self.navigationController?.pushViewController(vc, animated: true)
@@ -334,7 +334,7 @@ class HomeVC: UIViewController{
     // MARK: - Action Methods
     @IBAction func btnSubscribeAction(_ sender: UIButton) {
         let vc = ScreenManager.getController(storyboard: .projectStatus, controller: SubscribeVC()) as! SubscribeVC
-//        vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION ?? ""
+        //        vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION ?? ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -528,17 +528,40 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource, UITextFieldDelega
         //        }
         
         //
-        if(kUserData?.user_type==UserType.kOwner && kUserData?.is_subscription==AppConstant.REGULAR || kUserData?.is_subscription==AppConstant.TRIAL) {
-            let item = myProjectList[indexPath.row]
-            let vc = ScreenManager.getController(storyboard: .main, controller: ProjectDetailVC()) as! ProjectDetailVC
-            vc.ProjectId = item.id
-            print(item)
-            UserDefaults.standard.setValue(item.name, forKey: "PROJECT_NAME")
-            vc.projectType = self.projectType!.rawValue
-            self.navigationController?.pushViewController(vc, animated: true)
-        } else {
-            
-        }
+        
+        
+        let item = myProjectList[indexPath.row]
+        
+                if item.subscription_status == true{
+                    let vc = ScreenManager.getController(storyboard: .main, controller: ProjectDetailVC()) as! ProjectDetailVC
+                    vc.ProjectId = item.id
+                    print(item)
+                    UserDefaults.standard.setValue(item.name, forKey: "PROJECT_NAME")
+                    vc.projectType = self.projectType!.rawValue
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }else{
+                    if kUserData?.user_type == UserType.kOwner{
+                        showSubscriptionAppAlert(title: "Alert!", message: "Your subscription/trail period is expired please subscribe.",yesTitle: "Subscribe") {
+                            let vc = ScreenManager.getController(storyboard: .projectStatus, controller: SubscribeVC()) as! SubscribeVC
+                            //                                vc.IS_SUBSCRIPTION = self.IS_SUBSCRIPTION
+                            self.navigationController?.pushViewController(vc, animated: true)
+                        }
+                    }else{
+                        showMessageWithOk(title: "Alert!", message: "Your subscription/trail period is expired please subscribe.")
+                    }
+                }
+        
+        //        if(kUserData?.user_type==UserType.kOwner && kUserData?.is_subscription==AppConstant.REGULAR || kUserData?.is_subscription==AppConstant.TRIAL) {
+        //            let item = myProjectList[indexPath.row]
+        //            let vc = ScreenManager.getController(storyboard: .main, controller: ProjectDetailVC()) as! ProjectDetailVC
+        //            vc.ProjectId = item.id
+        //            print(item)
+        //            UserDefaults.standard.setValue(item.name, forKey: "PROJECT_NAME")
+        //            vc.projectType = self.projectType!.rawValue
+        //            self.navigationController?.pushViewController(vc, animated: true)
+        //        } else {
+        //
+        //        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
